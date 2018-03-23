@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<p>Nano Hacker Acadamey</p>
+
+		<button id="red">Change the font color to red!</button>
+		<button id="blue">Change the font color to blue!</button>
+
+		<script>
+			$("button#red").click(()=>{
+				$("p").css("color","red");
+			});
+			$("button#blue").click(()=>{
+				$("p").css("color","blue");
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<p>Year: <input type="text"></p>
+		<button>Minimum Wage</button>
+		<div></div>
+
+		<script>
+			let minimumWage = 13;
+			let year = 2018;
+			let sentence = `New York City's minimum wage in ${year} was $${minimumWage} per hour.`;
+			console.log(sentence);
+
+			minimumWage = 15;
+			year = 2019;
+			sentence = `New York City's minimum wage next year will be $${minimumWage} per hour.`;
+			console.log(sentence);
+
+			$("button").click((year)=>{
+					year=$("input").val();
+					if(year==="2018"){
+						minimumWage="13";
+					}
+					else if(year==="2019"){
+						minimumWage="15";
+					}
+					else{
+						minimumWage="Sorry, not available.";
+					}
+
+					$("div").html(minimumWage);
+			});
+		</script>
+		<style>
+		</style>
+	</body>
+</html>
