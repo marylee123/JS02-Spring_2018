@@ -17,9 +17,9 @@
 				$("ul#healthy").append(`<br><li>${student}</li>`);
 			}
 			else if(temp > 98){
-				$("ul#unhealthy").append(`<br><li>${student}</li>`);
+				$("ul#unhealthy").append(`<br><li><p id='sickly'>${student}</li>`);
 				if(temp > 103){
-					$("li").css("color","red");
+					$("p#sickly").css("color","red");
 				}
 			}
 		});
