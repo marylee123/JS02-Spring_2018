@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<input type="text">
+		<button type="button">Click Me!</button>
+
+		<p>My name is <span id="myName"></span></p>
+
+		<script>
+			$("button").click(()=>{
+				const text = $("input").val();
+				$("span#myName").html(`${text}`);
+			});
+		</script>
+	</body>
+</html>

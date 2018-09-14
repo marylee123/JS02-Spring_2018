@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<form>
+			<input type="radio" id="heads">Heads<br>
+			<input type="radio" id="tails">Tails<br>
+		</form>
+		<button>Guess</button>
+		<div></div>
+		<span></span>
+		<script>
+			//let head = 0;
+			//let tail = 0;
+			$("button").click(()=>{
+				const headsOrTails = parseInt(Math.random() * 2);
+
+				if(headsOrTails == 0){
+					$("div").html("<img src = 'http://random-ize.com/coin-flip/us-quarter/us-quarter-front.jpg'width=300px>");
+					//head = head + 1;
+				}else if(headsOrTails == 1){
+					$("div").html("<img src = 'https://upload.wikimedia.org/wikipedia/commons/5/5c/2005_Dime_Rev_Unc_P.png' width=300px>");
+					//tail = tail + 1;
+				}
+				/*const imgUrl = headsOrTails == 0 ? "http://random-ize.com/coin-flip/us-quarter/us-quarter-front.jpg" : "https://upload.wikimedia.org/wikipedia/commons/5/5c/2005_Dime_Rev_Unc_P.png";
+				$("div").html("<img src = '${imgUrl}'>");*/
+				//$("span").html(`<p>${head}:${tail}</p>`);
+			});
+		</script>
+	</body>
+</html>
